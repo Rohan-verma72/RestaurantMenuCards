@@ -36,7 +36,7 @@ const Header = () => {
         <div className="relative z-10 flex flex-col md:flex-row items-center gap-6 w-full max-w-7xl mx-auto px-4 justify-center">
           <div className="flex-shrink-0 animate-fade-in-down">
             <img
-              src="/logo.png"
+              src={process.env.PUBLIC_URL + "/logo.png"}
               alt="T-Talk Cafe Logo"
               className="w-28 h-28 md:w-40 md:h-40 rounded-full border-4 border-amber-500/50 shadow-2xl hover:scale-110 transition-transform duration-300"
             />
