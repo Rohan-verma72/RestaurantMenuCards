@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
+const images = [
+  "https://static.vecteezy.com/system/resources/previews/010/377/416/large_2x/close-up-of-hot-latte-coffee-in-the-cafe-banner-for-website-header-design-with-copy-space-for-text-free-photo.jpg",
+  "https://th.bing.com/th/id/OIP.eJNtPXFAwMxvMnCb7qN4-gFNC7?rs=1&pid=ImgDetMain",
+  "https://th.bing.com/th/id/R.0bd584e40b0f27e9fea7d3a96d875401?rik=J7o5PtctJ1581Q&riu=http%3a%2f%2ffmcaffe.com%2fwp-content%2fuploads%2f2017%2f07%2fcoffee-header-1024x575.jpg&ehk=dYzYJXKpHm67%2bnbAAAQ%2fgt3kOgT6l00XzYxbsBBaLfA%3d&risl=&pid=ImgRaw&r=0",
+];
+
 const Header = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const images = [
-    "https://static.vecteezy.com/system/resources/previews/010/377/416/large_2x/close-up-of-hot-latte-coffee-in-the-cafe-banner-for-website-header-design-with-copy-space-for-text-free-photo.jpg",
-    "https://th.bing.com/th/id/OIP.eJNtPXFAwMxvMnCb7qN4-gFNC7?rs=1&pid=ImgDetMain",
-    "https://th.bing.com/th/id/R.0bd584e40b0f27e9fea7d3a96d875401?rik=J7o5PtctJ1581Q&riu=http%3a%2f%2ffmcaffe.com%2fwp-content%2fuploads%2f2017%2f07%2fcoffee-header-1024x575.jpg&ehk=dYzYJXKpHm67%2bnbAAAQ%2fgt3kOgT6l00XzYxbsBBaLfA%3d&risl=&pid=ImgRaw&r=0",
-  ];
+
 
   useEffect(() => {
     const interval = setInterval(() => {
