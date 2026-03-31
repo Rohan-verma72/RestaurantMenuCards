@@ -17,7 +17,7 @@ function App() {
   console.log("working")
   return (
     
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Header />  
         <Routes>
